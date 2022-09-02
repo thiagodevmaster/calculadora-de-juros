@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de juros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="section-juros">
+                <h2>Calculadora de Juros</h2>
+                <div class="form">
+
+                    <label for="valor-inicial">Valor Inicial:</label>
+                    <input type="number" name="valor-inicial" step="0.01" id="valor-inicial" min="0" required>
+                    <label for="parcela">Parcelas:</label>
+                    <select name="parcela" id="parcela">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label for="juros">Juros:</label>
+                    <input type="number" name="juros" id="juros" step="0.01" min="0" required>
+                    <div>
+                        <button id="btn-Js">Calcular Juros Simples</button>
+                        <button id="btn-Jc">Calcular Juros Compostos</button>
+                    </div>
+                </div>
+
+                <div class="resultado">
+                    <h4 class="titulo-resultado"></h4>
+                    <div>
+                        <label for="valor-total-final">Valor total final</label>
+                        <p id="valor-total-final"></p>
+                    </div>
+
+                    <div>
+                        <label for="valor-total-investido">Valor investido</label>
+                        <p id="valor-total-investido"></p>
+                    </div>
+
+                    <div>
+                        <label for="valor-total-juros">Total em juros</label>
+                        <p id="valor-total-juros"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
